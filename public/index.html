@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Google-SignIn</title>
+   <meta name="google-site-verification" content="_JaTOJx2GRokqzHEA3qTwBoHNw_8l5gS-6EGutxwFqc" />
+   <script src="https://accounts.google.com/gsi/client" async defer></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+
+<body class="container">
+   <div class="row mt-4">
+      <div class="col-sm-6">
+         <h1>Google-SignIn</h1>
+         <hr>
+         <div id="g_id_onload" data-client_id="759068682778-7vq6e7hgbnp0tdmrl6liu0q6akcr3scd.apps.googleusercontent.com"
+            data-auto_prompt="false" data-callback="handleCredentialResponse">
+         </div>
+         <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
+            data-shape="rectangular" data-logo_alignment="left">
+         </div>
+         <button id="signout" class="btn btn-danger mt-2">
+            SignOut
+         </button>
+      </div>
+      <div class="col-sm-6">
+         <h1>Login Manual</h1>
+         <hr>
+         <form action="" class="d-grid">
+         <input type="text" name="correo" id="" class="form-control mb-2" placeholder="correo">
+         <input type="text" name="password" id="" class="form-control mb-2" placeholder="password">
+         <button class="btn btn-primary" type="submit">Ingresar</button>
+      </form>
+      </div>
+   </div>
+ 
+  <script src="./js/auth.js"></script>
+</body>
+
+
+</html>
